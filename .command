@@ -1,1 +1,1 @@
-java boxshogi/Main -f
+java Main -f
