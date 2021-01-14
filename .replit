@@ -1,2 +1,2 @@
 language = "java10"
-run = "javac boxshogi/Main.java; cd test_runners; chmod a+x test-runner-linux; ./test-runner-linux --verbose"
+run = "javac boxshogi/Main.java; chmod a+x ./test_runners/test-runner-linux; ./test_runners/test-runner-linux --verbose"
