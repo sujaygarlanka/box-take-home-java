@@ -1,6 +1,9 @@
 # BoxShogi Specification
 Listed below is the game specification under [Game Rules](#game-rules), the expected game interface under [Game Interface](#game-interface) and finally how to setup your coding environment and begin coding under [Getting Started](#getting-started). We recommend reading the games rules and understanding the game interface before you begin coding.
 
+- [Getting Started](#getting-started)
+  - [Working on your Desktop](#working-on-your-desktop)
+  - [Working Online (Repl.it)](#working-on-repl)
 - [Game Rules](#game-rules)
     - [Overview](#overview)
     - [Objective](#objective)
@@ -14,9 +17,86 @@ Listed below is the game specification under [Game Rules](#game-rules), the expe
 - [Game Interface](#game-interface)
   - [Interactive Mode](#interactive-mode)
   - [File Mode](#file-mode)
-- [Getting Started](#getting-started)
-  - [Working on your Desktop](#working-on-your-desktop)
-  - [Working Online (Repl.it)](#working-on-repl)
+
+## Getting Started
+
+When you accepted the assignment, this Github repo was created. This is where your assignment code will reside. This is what will be viewed and graded by us. Anytime code is pushed to this repo our autograder is run. **You will ultimately be graded on passing the tests run by the autograder.** You can view the autograder results by clicking on the `x` or `check` next to the most recent commit hash. You must add a commit before you see this. This is shown below.
+
+![](media/autograder.gif)
+
+Some starter code is provided and a utility function. You must use the starter code provided! You can also use the utility function provided to handle some of the tedious input and output so that you don't need to implement it yourself. The utility function can be modified to suit your needs. It is also optional; not required to be used.
+
+You can work on this project locally on your desktop or online on Repl.it.
+
+### Working on your Desktop
+
+To begin the assignment, you need to first clone your repo to your desktop running the command below in your terminal.
+
+```
+$ git clone https://github.com/Box-Internship-Assignment/box-take-home-java-<your-github-username>.git
+```
+
+Once you have the code locally, you can edit your code using your favorite code editor. Once you have edited the code, to push the changes to Github, you should run the commands below. 
+
+```
+$ git add .
+$ git commit -m 'message describing the changes'
+$ git push
+```
+
+#### Testing your program
+
+We have created a collection of test cases along with a test runner that you can use to determine the correctness of your solution. We will also use the test runner when evaluating your program.
+
+The test runner is provided as a binary, and supports macOS, Windows 10, and Ubuntu Linux. Other flavors of these operating systems may work, but are not tested.
+
+The test runner and test cases can be found in the `test_runners` and `test_cases` folder respectively.
+
+##### Running the test runner
+1. To invoke the test runner, navigate to the `test_runners` folder and execute the version for your operating system. e.g. `./test-runner-mac`, or on Windows, `cmd /K test-runner-windows.exe`
+**Notes:**
+- On windows, pass the `/K` option to keep the runner open after execution
+- Make sure the runner is executable via the terminal by running `chmod a+x test-runner-mac` or `chmod a+x test-runner-linux`. On Windows, right click the file and navigate the `properties` menu
+
+##### Supported flags
+`-r` reset: this resets the `.command` file in case the path/way you run your program in file mode changes
+`-v` verbose: this will print out the difference in the expected output and actual output of failed tests, along with an explanation of the differences/errors
+`-f` filter: filters test cases based on a string. e.g. `./test-runner-mac -f "governance"` will run tests that have governance in their name.
+    **Note:** If using windows, make sure to use double quotes "" or no quotes. Single quotes will not work.
+`-b` break: stops execution of tests after the first encountered failure
+
+**Note:** You can combine flags, although if you're using the filter flag, the filter string must be right after. For example, both of these would work equivalently:
+- `./test-runner-mac -b -f 'governance'`
+- `./test-runner-mac -f 'governance' -b`
+
+Note: the test cases aren't completely exhaustive — there are too many variations of illegal moves for creating a totally exhaustive set to be feasible — but for the purposes of evaluating your solution, you don't need to consider anything not covered by the provided test cases.
+
+### Working on Repl
+
+Repl.it is an online coding environment where you can write code and run tests. Follow the steps below to setup Repl.it and push your code to Github.
+
+
+#### Create/Sign into a Repl.it Account
+- Go to Repl's sign up [page](https://repl.it/signup) and sign up if don't you have an account or login if you already have one
+- You can create an account using your Github login
+
+#### Setup Repl.it
+- Once you have signed into an account, click on the <img src="./media/work_in_repl.png" width="80" height="25" /> button at the top of this README. You will be redirected to your repo in Repl.
+- Once redirected, you can write code and run tests.
+- Tests can be run by pressing the green `Run` button at the top of REPL.
+- **Common Issues**
+    - **Not redirected to your Repl** - You must be logged into Repl in the browser you use to open your repo
+
+![](media/setup_repl.gif)
+
+#### Push code from Repl.it to Github
+Once you have made your changes in Repl.it, you should push the changes to Github. The steps to do so are the following and are shown in the GIF below:
+- Click on the <img src="./media/repl_code_icon.png" width="30" height="30" /> icon in the right navigation bar
+- Type in the commit message in the commit text box
+- Then click `Commit & push ->` button to push the changes to Github
+
+![](media/code_with_repl.gif)
+
 
 ## Game Rules
 
@@ -361,76 +441,3 @@ Captures lower:
 
 UPPER player wins.  Illegal move.
 ```
-
-## Getting Started
-
-When you accepted the assignment, this Github repo was created. This is where your assignment code will reside. This is what will be viewed and graded by us. Anytime code is pushed to this repo our autograder is run. **You will ultimately be graded on passing the tests run by the autograder.** You can view the autograder results by clicking on the x or check next to the most recent commit hash. This is shown below.
-
-![](media/autograder.gif)
-
-Some starter code is provided and a utility function. You must use the starter code provided! You can also use the utility function provided to handle some of the tedious input and output so that you don't need to implement it yourself. The utility function can be modified to suit your needs. It is also optional; not required to be used.
-
-You can work on this project locally on your desktop or online on Repl.it.
-
-### Working on your Desktop
-
-To begin the assignment, you need to first clone your repo to your desktop running the command below in your terminal.
-
-```
-$ git clone https://github.com/Box-Internship-Assignment/box-take-home-java-<your-github-username>.git
-```
-
-Once you have the code locally, you can edit your code using your favorite code editor. Once you have edited the code, to push the changes to Github, you should run the commands below. 
-
-```
-$ git add .
-$ git commit -m 'message describing the changes'
-$ git push
-```
-
-#### Testing your program
-
-We have created a collection of test cases along with a test runner that you can use to determine the correctness of your solution. We will also use the test runner when evaluating your program.
-
-The test runner is provided as a binary, and supports macOS, Windows 10, and Ubuntu Linux. Other flavors of these operating systems may work, but are not tested.
-
-The test runner and test cases can be found in the `test_runners` and `test_cases` folder respectively.
-
-##### Running the test runner
-1. To invoke the test runner, navigate to the `test_runners` folder and execute the version for your operating system. e.g. `./test-runner-mac`, or on Windows, `cmd /K test-runner-windows.exe`
-**Notes:**
-- On windows, pass the `/K` option to keep the runner open after execution
-- Make sure the runner is executable via the terminal by running `chmod a+x test-runner-mac` or `chmod a+x test-runner-linux`. On Windows, right click the file and navigate the `properties` menu
-
-##### Supported flags
-`-r` reset: this resets the `.command` file in case the path/way you run your program in file mode changes
-`-v` verbose: this will print out the difference in the expected output and actual output of failed tests, along with an explanation of the differences/errors
-`-f` filter: filters test cases based on a string. e.g. `./test-runner-mac -f "governance"` will run tests that have governance in their name.
-    **Note:** If using windows, make sure to use double quotes "" or no quotes. Single quotes will not work.
-`-b` break: stops execution of tests after the first encountered failure
-
-**Note:** You can combine flags, although if you're using the filter flag, the filter string must be right after. For example, both of these would work equivalently:
-- `./test-runner-mac -b -f 'governance'`
-- `./test-runner-mac -f 'governance' -b`
-
-Note: the test cases aren't completely exhaustive — there are too many variations of illegal moves for creating a totally exhaustive set to be feasible — but for the purposes of evaluating your solution, you don't need to consider anything not covered by the provided test cases.
-
-### Working on Repl
-
-Repl.it is an online coding environment where you can write code and run tests. Follow the steps below to setup Repl.it and push your code to Github.
-
-#### Setup Repl.it
-The steps to begin coding in Repl.it are the following and are shown in the GIF below:
-- Click on `Work in Repl.it` in the Github repo
-- Create a REPL account (You can use your Github login to create a Repl.it account)
-- Go back to the Github page and click on `Work in Repl.it`
-
-![](media/setup_repl.gif)
-
-#### Push code from Repl.it to Github
-Once you have made your changes in Repl.it, you should push the changes to Github. The steps to do so are the following and are shown in the GIF below:
-- Click on the Code icon in the right navigation bar
-- Type in the commit message in the commit text box
-- Then click `Commit and push ->` button to push the changes to Github
-
-![](media/code_with_repl.gif)
