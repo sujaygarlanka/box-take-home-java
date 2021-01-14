@@ -1,3 +1,5 @@
+package boxshogi;
+
 /**
  * Class to represent Box Shogi board
  */

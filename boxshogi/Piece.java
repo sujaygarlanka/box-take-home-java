@@ -1,4 +1,6 @@
-public class Piece {	    
+package boxshogi;
+
+public class Piece {
     public String toString() {
         return "";
     }

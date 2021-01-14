@@ -1,3 +1,5 @@
+package boxshogi;
+
 import java.io.*;
 import java.util.*;
 
