@@ -1,5 +1,5 @@
 # BoxShogi Specification
-Listed below is the game specification under [Game Rules](#game-rules), the expected game interface under [Game Interface](#game-interface) and finally how to setup your coding environment and begin coding under [Getting Started](#getting-started). We recommend reading the games rules and understanding the game interface before you begin coding.
+Listed below is how to setup your coding environment and begin coding under [Getting Started](#getting-started), the game specification under [Game Rules](#game-rules) and finally the expected game interface under [Game Interface](#game-interface). We recommend reading the games rules and understanding the game interface before you begin coding.
 
 - [Getting Started](#getting-started)
   - [Working on your Desktop](#working-on-your-desktop)
