@@ -71,9 +71,11 @@ The test runner and test cases can be found in the `test_runners` and `test_case
 
 Note: the test cases aren't completely exhaustive — there are too many variations of illegal moves for creating a totally exhaustive set to be feasible — but for the purposes of evaluating your solution, you don't need to consider anything not covered by the provided test cases.
 
-### Working on Repl
+### Working on Repl (Beta)
 
-Repl.it is an online coding environment where you can write code and run tests. Follow the steps below to setup Repl.it and push your code to Github.
+Repl.it is an online coding environment where you can write code and run tests. 
+
+This year we are including an option to code this project online on Repl.it. This is **beta** program because this is new for us as well as Repl and Github. You can follow the steps below to setup Repl.it and push your code to Github. We also welcome any questions or feedback you may have regarding this option at internship-take-home@box.com.
 
 
 #### Create/Sign into a Repl.it Account
@@ -81,7 +83,8 @@ Repl.it is an online coding environment where you can write code and run tests. 
 - You can create an account using your Github login
 
 #### Setup Repl.it
-- Once you have signed into an account, click on the <img src="./media/work_in_repl.png" width="80" height="25" /> button at the top of this README. You will be redirected to your repo in Repl.
+- Copy and paster your invitation link in a new tab 
+- Then click on the <img src="./media/work_in_repl.png" width="80" height="25" /> button at the top of this README. You will be redirected to your repo in Repl.
 - Once redirected, you can write code and run tests.
 - Tests can be run by pressing the green `Run` button at the top of REPL.
 - **Common Issues**
