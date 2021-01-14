@@ -1,8 +1,9 @@
 #!/bin/bash
 
-java Main -f ./test_cases/$1.in | diff -s  - ./test_cases/$1.out -i -w -B > /dev/null
+javac boxshogi/Main.java
+java boxshogi/Main -f ./test_cases/$1.in | diff -s  - ./test_cases/$1.out -i -w -B > /dev/null
 if [ $? -eq 1 ]
 then
-    java Main -f ./test_cases/$1.in | icdiff /dev/stdin ./test_cases/$1.out --whole-file --label=Actual --label=Expected
+    java boxshogi/Main -f ./test_cases/$1.in | icdiff /dev/stdin ./test_cases/$1.out --whole-file --label=Actual --label=Expected
     exit 1
 fi
